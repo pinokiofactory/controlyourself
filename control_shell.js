@@ -12,11 +12,12 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   await page.keyboard.press("Enter")
   await page.waitForSelector("#search")
   await page.click("#search a")
+//  await delay(3000);
+//  await page.mouse.wheel(0, 100)
+//  await delay(3000);
+//  await page.mouse.wheel(0, 100)
+//  await delay(3000);
+//  await page.mouse.wheel(0, 100)
   await delay(3000);
-  await page.mouse.wheel(0, 100)
-  await delay(3000);
-  await page.mouse.wheel(0, 100)
-  await delay(3000);
-  await page.mouse.wheel(0, 100)
   await browser.close()
 })();
