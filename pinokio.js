@@ -6,5 +6,8 @@ module.exports = {
   menu: [{
     text: "run",
     href: "index.js"
+  }, {
+    text: "shell",
+    href: "shell.js"
   }]
 }
