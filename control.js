@@ -1,7 +1,8 @@
 class Control {
   async run(req, ondata, kernel) {
     let { chromium, firefox, webkit, devices } = kernel.playwright
-    const browser = await chromium.launch({ headless: false, });
+    //const browser = await chromium.launch({ headless: false, });
+    const browser = await firefox.launch({ headless: false, });
     console.log("browser", browser)
     //const context = await browser.newContext(devices['Desktop Chrome'])
     const context = await browser.newContext({ viewport: null })
