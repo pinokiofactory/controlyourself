@@ -18,4 +18,5 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   await page.mouse.wheel(0, 100)
   await delay(3000);
   await page.mouse.wheel(0, 100)
+  await browser.close()
 })();
