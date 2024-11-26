@@ -9,5 +9,8 @@ module.exports = {
   }, {
     text: "shell",
     href: "shell.js"
+  }, {
+    text: "update",
+    href: "update.js"
   }]
 }
